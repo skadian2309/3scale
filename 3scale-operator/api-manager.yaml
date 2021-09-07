@@ -1,0 +1,11 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIManager
+metadata:
+  name: 3scale-apimanager
+  namespace: 3scale-auto
+spec:
+  system:
+    fileStorage:
+      persistentVolumeClaim:
+        storageClassName: ocs-storagecluster-cephfs
+  wildcardDomain: apps.cluster-9b04.9b04.example.opentlc.com
