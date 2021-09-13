@@ -1,1 +1,1 @@
-# 3scale
+# 3scale and RHSSO GitOps
