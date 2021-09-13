@@ -6,7 +6,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   ignoreDifferences:
-  - group: apps
+  - group: apps.openshift.io
     kind: DeploymentConfig
     name: sso
     namespace: sso
