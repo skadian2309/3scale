@@ -22,7 +22,7 @@ spec:
     name: sso
     namespace: sso
     jsonPointers:
-      - "/spec/template/spec/containers[0]"
+      - .spec.template.spec.containers[0].image
       - /status
   destination:
     namespace: sso
