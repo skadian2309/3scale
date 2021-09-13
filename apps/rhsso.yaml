@@ -21,9 +21,9 @@ spec:
     kind: DeploymentConfig
     name: sso
     namespace: sso
-    jsonPointers:
+    jqPathExpressions:
       - .spec.template.spec.containers[0].image
-      - /status
+      - .status
   destination:
     namespace: sso
     name: in-cluster
