@@ -12,6 +12,10 @@ spec:
     namespace: sso
     jsonPointers:
     - /spec/template/spec/containers/image
+  - group: ""
+    kind: Route
+    jsonPointers:
+      - /spec/to/kind  
   destination:
     namespace: sso
     name: in-cluster
