@@ -10,6 +10,6 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: 3scale-operator
+    path: apps
     repoURL: https://github.com/skadian2309/3scale.git
     targetRevision: HEAD
