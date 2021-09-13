@@ -17,7 +17,7 @@ spec:
     namespace: sso
     jsonPointers:
       - /spec/template/spec/containers[0]/image
-- group: apps.openshift.io
+  - group: apps.openshift.io
     kind: DeploymentConfig
     name: sso
     namespace: sso
