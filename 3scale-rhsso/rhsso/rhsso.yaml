@@ -303,6 +303,8 @@ items:
           livenessProbe:
             failureThreshold: 3
             initialDelaySeconds: 90
+            periodSeconds: 10	
+            successThreshold: 1
             tcpSocket:
               port: 5432
             timeoutSeconds: 10
@@ -319,8 +321,12 @@ items:
               - psql -h 127.0.0.1 -U $POSTGRESQL_USER -q -d $POSTGRESQL_DATABASE -c 'SELECT 1'
             failureThreshold: 3
             initialDelaySeconds: 90
+            periodSeconds: 10	
+            successThreshold: 1
             timeoutSeconds: 10
           resources: {}
+          terminationMessagePath: /dev/termination-log	
+          terminationMessagePolicy: File
           volumeMounts:
           - mountPath: /var/lib/pgsql/data
             name: sso-postgresql-pvol
