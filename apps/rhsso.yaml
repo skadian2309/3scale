@@ -17,6 +17,13 @@ spec:
     namespace: sso
     jsonPointers:
       - /spec/template/spec/containers[0]/image
+- group: apps.openshift.io
+    kind: DeploymentConfig
+    name: sso
+    namespace: sso
+    jsonPointers:
+      - /spec/template/spec/containers[0]/image
+      - /status
   destination:
     namespace: sso
     name: in-cluster
