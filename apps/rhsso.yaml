@@ -16,7 +16,7 @@ spec:
     name: sso-postgresql
     namespace: sso
     jsonPointers:
-      - /spec/template/spec
+      - /spec/template/spec/containers[0]/image
   destination:
     namespace: sso
     name: in-cluster
