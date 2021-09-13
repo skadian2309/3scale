@@ -10,7 +10,7 @@ spec:
     kind: DeploymentConfig
     name: sso
     jsonPointers:
-    - /spec/replicas
+    - /spec/template/spec/containers/image
   destination:
     namespace: sso
     name: in-cluster
