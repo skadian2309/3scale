@@ -5,6 +5,12 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
+  ignoreDifferences:
+  - group: apps
+    kind: DeploymentConfig
+    name: sso
+    jsonPointers:
+    - /spec/replicas
   destination:
     namespace: sso
     name: in-cluster
