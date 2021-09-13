@@ -11,11 +11,11 @@ spec:
     namespace: sso
     jsonPointers:
       - /spec/to/kind
- - group: apps.openshift.io
-   kind: DeploymentConfig
-   name: sso-postgresql
-   namespace: sso
-   jsonPointers:
+  - group: apps.openshift.io
+    kind: DeploymentConfig
+    name: sso-postgresql
+    namespace: sso
+    jsonPointers:
       - /spec/template
   destination:
     namespace: sso
