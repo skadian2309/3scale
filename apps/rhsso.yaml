@@ -6,12 +6,6 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   ignoreDifferences:
-  - group: apps.openshift.io
-    kind: DeploymentConfig
-    name: sso
-    namespace: sso
-    jsonPointers:
-    - /spec/template/spec/containers/image
   - group: ""
     kind: Route
     jsonPointers:
