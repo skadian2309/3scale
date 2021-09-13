@@ -6,7 +6,7 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   ignoreDifferences:
-  - group: ""
+  - group: route.openshift.io
     kind: Route
     namespace: sso
     jsonPointers:
