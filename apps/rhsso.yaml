@@ -9,6 +9,7 @@ spec:
   - group: apps
     kind: DeploymentConfig
     name: sso
+    namespace: sso
     jsonPointers:
     - /spec/template/spec/containers/image
   destination:
